@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup page</title>
+  <style>
+    .error { color: red; }
+    body{
+        display: flex;
+        background-size: cover;
+        background-image: url(848.jpg);
+        display: flex;
+     
+    }
+    .form{
+        background-image: url(https://media.istockphoto.com/id/1044295184/vector/defocused-abstract-gray-background.jpg?s=612x612&w=0&k=20&c=g_uKIDaiDFVp5c26wCvd0f1LPs5Usw9kE8JtPgLbkaQ=);
+        text-align: center;
+        margin-top: 50px;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 300px;
+        margin-left: 700px;
+        background-size: cover;}
+        .h1{
+            text-align: center;
+            color: aliceblue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 400;
+            margin-left: 700px;
+            font: size 50px;;
+            margin-top: 30px;
+        }
+    
+    .page{
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .button{
+        margin-bottom: 50px;
+        background-color: rgb(233, 221, 238);
+        color: rgb(2, 9, 15);
+        margin-top: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    
+    }
+   
+    .button:hover{
+        background-color: blue;
+        color: white;
+    }
+    .page:hover{
+        background-color: rgb(214, 192, 192);
+    }
+    @media (max-width: 768px) {
+        .form {
+            width: 90%; /* Make form take up 90% of the width on smaller screens */
+            margin-left: 5%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .form {
+            width: 100%; /* Make form take up full width on mobile devices */
+            margin-left: 0;
+            padding: 10px;
+        }
+    }
+  </style>
+  <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">  Welcome to coffee house </h1>
+        
+
+    <div class="form">
+
+
+  <h2 class="h2">Register</h2>
+  <form id="signupForm" onsubmit="return validateSignup()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" class="page"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" class="page"><br><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" class="page"><br><br>
+    
+    <label for="confirmPassword">Confirm Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" class="page"><br><br>
+    
+    <input type="submit" value="Sign Up" class="button">
+  </form>
+</div>
+</div>
+
+
+
+</body>
+</html>
